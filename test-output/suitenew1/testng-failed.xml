@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [suitenew1]">
+  <test name="testnew1">
+    <classes>
+      <class name="tests.BaseTest"/>
+      <class name="tests.HomeTest"/>
+    </classes>
+  </test> <!-- testnew1 -->
+  <test name="testnew1(failed)">
+    <classes>
+      <class name="tests.BaseTest">
+        <methods>
+          <include name="befSuite"/>
+        </methods>
+      </class> <!-- tests.BaseTest -->
+      <class name="tests.HomeTest">
+        <methods>
+          <include name="beforeClassTest"/>
+          <include name="navigateToHomeTest"/>
+          <include name="navigateToDemoTabsTest"/>
+        </methods>
+      </class> <!-- tests.HomeTest -->
+    </classes>
+  </test> <!-- testnew1(failed) -->
+</suite> <!-- Failed suite [suitenew1] -->
